@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title><![CDATA[wangjun's blog]]></title>
+  <subtitle><![CDATA[技术知识积累，生活点滴记录]]></subtitle>
+  <link href="/atom.xml" rel="self"/>
+  <link href="http://wangjun0511.github.io/"/>
+  <updated>2015-01-30T16:47:00.976Z</updated>
+  <id>http://wangjun0511.github.io/</id>
+  
+  <author>
+    <name><![CDATA[军歌嘹亮]]></name>
+    <email><![CDATA[wangjun0555@163.com]]></email>
+  </author>
+  
+  <generator uri="http://zespia.tw/hexo/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[]]></title>
+    <link href="http://wangjun0511.github.io/2015/01/30/%E6%97%A0%E6%A0%87%E9%A2%98/"/>
+    <id>http://wangjun0511.github.io/2015/01/30/无标题/</id>
+    <published>2015-01-30T12:01:20.000Z</published>
+    <updated>2015-01-30T12:01:20.000Z</updated>
+    <content type="html"><![CDATA[]]></content>
+    <summary type="html">
+    <![CDATA[]]>
+    </summary>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Mac 环境 Hexo+Ulysses博客系统安装]]></title>
+    <link href="http://wangjun0511.github.io/2015/01/30/Mac-%E7%8E%AF%E5%A2%83-Hexo-Ulysses%E5%8D%9A%E5%AE%A2%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/"/>
+    <id>http://wangjun0511.github.io/2015/01/30/Mac-环境-Hexo-Ulysses博客系统安装/</id>
+    <published>2015-01-30T09:40:43.000Z</published>
+    <updated>2015-01-30T16:43:22.000Z</updated>
+    <content type="html"><![CDATA[<h1 id="hexo简介">hexo简介</h1>
+<p>hexo是一个基于Node.js的静态博客程序，可以方便的生成静态网页托管在github和gitcafe，作者是来自台湾的<a href="https://github.com/hexojs/hexo" target="_blank" rel="external">tommy351</a>。根据<a href="http://hexo.io/docs/index.html" target="_blank" rel="external">官网</a>介绍，Hexo是一个简单、快速、强大的博客发布工具，支持Markdown格式。</p>
+<a id="more"></a>
+<hr>
+<h1 id="Hexo安装">Hexo安装</h1>
+<p>首先确保Git、Node都安装成功  </p>
+<pre><code>npm <span class="keyword">install</span> hexo -g  <span class="comment">#-g表示全局安装, </span>
+</code></pre><hr>
+<h1 id="Hexo创建博客">Hexo创建博客</h1>
+<pre><code><span class="input"><span class="prompt">hexo init &lt;folder&gt;</span>  <span class="comment">#执行init命令初始化,例如: hexo init blog</span></span>
+hexo generate       <span class="comment">#自动根据当前目录下文件,生成静态网页</span>
+hexo server         <span class="comment">#运行本地服务 </span>
+</code></pre><hr>
+<h1 id="创建博文">创建博文</h1>
+<p>hexo new “Mac 环境 Hexo+Ulysses博客系统”  #新建博文</p>
+<pre><code>[info] <span class="keyword">File</span> created at <span class="regexp">/Users/</span>wj<span class="regexp">/code/</span>blog<span class="regexp">/source/</span>_posts<span class="regexp">/Mac-环境-Hexo-Ulysses博客系统.md`</span>
+</code></pre><hr>
+<h1 id="安装问题">安装问题</h1>
+<ul>
+<li>安装hexo，如果遇到权限问题用sudo执行。</li>
+<li>hexo version 2.8.3bug,CSS无法编译,执行 npm install hexo-renderer-stylus@0.1 —save</li>
+</ul>
+<hr>
+<h1 id="Ulysses编辑博文">Ulysses编辑博文</h1>
+<blockquote>
+<p>Markdown支持<br>多文档支持<br>iCloud支持<br>多种格式输出</p>
+</blockquote>
+<p><img src="http://7u2sd9.com1.z0.glb.clouddn.com/hexo_Ulysses.png" alt=""></p>
+<h1 id="部署github">部署github</h1>
+<p><em>config.yml添加如下内容：</em></p>
+<pre><code>deploy:
+  <span class="class"><span class="keyword">type</span>: <span class="title">github</span></span>
+  repository: https:<span class="comment">//github.com/wangjun0511/  wangjun0511.github.io.git</span>
+  branch: master
+</code></pre><p>执行部署命令：</p>
+<pre><code><span class="title">hexo</span> d        <span class="comment">#部署github</span>
+</code></pre><hr>
+<p>访问 <a href="http://localhost:4000" target="_blank" rel="external">http://localhost:4000</a> 查看效果。</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<h1 id="hexo简介">hexo简介</h1>
+<p>hexo是一个基于Node.js的静态博客程序，可以方便的生成静态网页托管在github和gitcafe，作者是来自台湾的<a href="https://github.com/hexojs/hexo" target="_blank" rel="external">tommy351</a>。根据<a href="http://hexo.io/docs/index.html" target="_blank" rel="external">官网</a>介绍，Hexo是一个简单、快速、强大的博客发布工具，支持Markdown格式。</p>
+]]>
+    
+    </summary>
+    
+      <category term="Hexo、Ulysses" scheme="http://wangjun0511.github.io/tags/Hexo%E3%80%81Ulysses/"/>
+    
+  </entry>
+  
+</feed>
